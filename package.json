@@ -1,0 +1,21 @@
+{
+  "name": "cucumber-js-example",
+  "version": "0.0.1",
+  "scripts": {
+    "tests-no-browser": "./node_modules/.bin/cucumber-js",
+    "generate-json-report": "./node_modules/.bin/cucumber-js features/*.feature --format-options '{\"colorsEnabled\": false, \"json\": true, \"usage-json\": true}' --format=json | tee test-results.json",
+    "generate-html-report": "node generate-html-report.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.0",
+    "i": "^0.3.6",
+    "npm": "^6.10.2"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "sync-request": "^6.1.0"
+  }
+}
